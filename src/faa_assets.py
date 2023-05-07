@@ -167,14 +167,3 @@ def build_asset(data_set) -> AssetsDefinition:
 
     return _asset
 
-
-defs = Definitions(
-    assets=[build_asset(data_set) for data_set in data_sets],
-    resources={
-        "faa_io_manager": duckdb_pandas_io_manager.configured(
-            {
-                "database": {"env": "DUCKDB_FAA_DB"},
-            }
-        ),
-    },
-)
