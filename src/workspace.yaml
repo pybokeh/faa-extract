@@ -1,0 +1,5 @@
+load_from:
+  - python_file:
+      relative_path: faa_definitions.py
+      location_name: faa-aircraft-extract
+      executable_path: /home/some_user/path_to_your_bin_python

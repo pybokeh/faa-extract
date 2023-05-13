@@ -1,9 +1,7 @@
 from dagster import (
-    AssetSelection,
     Definitions,
     ScheduleDefinition,
     define_asset_job,
-    load_assets_from_modules,
 )
 from dagster_duckdb_pandas import duckdb_pandas_io_manager
 from faa_assets import build_asset, data_sets
